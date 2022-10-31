@@ -7,34 +7,34 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 
-
-
-function Movie2() {
+function Movie1() {
   const history = useNavigate();
 
   function handleLocation(e) {
     e.preventDefault();
-    history("/Movies2");
+    history("/Movies1");
   }
 
-  const { data: movie2 } = useFetch("https://api.tvmaze.com/shows/2");
+  const { data: movie1 } = useFetch("https://api.tvmaze.com/shows/1");
 
   return (
-    <Container>
+    <Container className="container">
       <Row>
         <Col xl={12}>
-          <img src={movie2?.image.medium} /><br/>
+          <img src={movie1?.image.medium} />
+          <br />
+
+        
           <Button variant="btn btn-success" onClick={handleLocation}>
             Details
           </Button>
 
-          <p>{movie2?.name}</p>
-          <p>{movie2?.summary}</p>
-      
+          <p>{movie1?.name}</p>
+          <p>{movie1?.summary}</p>
         </Col>
       </Row>
     </Container>
   );
 }
 
-export default Movie2;
+export default Movie1;

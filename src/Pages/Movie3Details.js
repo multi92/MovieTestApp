@@ -1,15 +1,21 @@
-import React from "react";
 import useFetch from "../useFatch";
+import "../../src/App.css";
 
 function Movie3Details() {
-  const { data: movie3 } = useFetch("https://api.tvmaze.com/shows/3");
+  const { data: movieThird } = useFetch("https://api.tvmaze.com/shows/3");
 
   return (
     <div>
-      <img src={movie3?.image.medium} />
-      <p>{movie3?.name}</p>
-      <p>{movie3?.summary}</p>
-      <p>{movie3?.rating}</p>
+      <div className="movie3">
+        <h2> {movieThird?.name}</h2>
+
+        <img src={movieThird?.image.medium}></img>
+
+        <div className="product__rating"></div>
+
+        <p> {movieThird?.summary}</p>
+        <hr />
+      </div>
     </div>
   );
 }

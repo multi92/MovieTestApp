@@ -1,17 +1,25 @@
-import React from "react";
 import useFetch from "../useFatch";
+import "../../src/App.css";
 
-function Movie2Details() {
-  const { data: movie2 } = useFetch("https://api.tvmaze.com/shows/2");
+function Movie2Details
+() {
+  const { data: movieSecond } = useFetch("https://api.tvmaze.com/shows/2");
 
   return (
-    <div>
-      <img src={movie2?.image.medium} />
-      <p>{movie2?.name}</p>
-      <p>{movie2?.summary}</p>
-      <p>{movie2?.rating}</p>
-    </div>
+    
+      <div className="movie2">
+        <h2> {movieSecond?.name}</h2>
+
+        <img src={movieSecond?.image.medium}></img>
+
+        <div className="product__rating"></div>
+
+        <p> {movieSecond?.summary}</p>
+        <hr />
+      </div>
+    
   );
 }
 
-export default Movie2Details;
+export default Movie2Details
+;
