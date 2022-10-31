@@ -1,5 +1,6 @@
 import useFetch from "../useFatch";
 import "../../src/App.css";
+import { DynamicStar } from "react-dynamic-star";
 
 function Movie2Details
 () {
@@ -8,9 +9,13 @@ function Movie2Details
   return (
     
       <div className="movie2">
-        <h2> {movieSecond?.name}</h2>
+      <h2> {movieSecond?.name}</h2>
+      
 
-        <img src={movieSecond?.image.medium}></img>
+
+      <img src={movieSecond?.image.medium}></img>
+      
+      <DynamicStar  />
 
         <div className="product__rating"></div>
 

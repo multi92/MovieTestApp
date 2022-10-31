@@ -16,8 +16,11 @@
     "react-bootstrap": "^2.5.0",
     "react-chartjs-2": "^4.3.1",
     "react-dom": "^17.0.2",
+    "react-dynamic-star": "^0.0.2",
     "react-router-dom": "6",
     "react-scripts": "4.0.3",
+    "react-simple-star-rating": "^5.1.6",
+    "react-stars-display": "^0.1.24",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

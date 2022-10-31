@@ -10,11 +10,7 @@ import Movie3Details from "./Pages/Movie3Details";
 function App() {
   return (
     <Router history={history}>
-      {/* <nav>
-        <Link to="/"> Movie1 </Link>
-        <Link to="/about"> About </Link>
-        <Link to="/profile"> Profile </Link>
-      </nav> */}
+  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Movies1" element={<Movie1Details />} />
