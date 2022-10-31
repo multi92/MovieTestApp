@@ -1,6 +1,6 @@
 import useFetch from "../useFatch";
 import "../../src/App.css";
-import { DynamicStar } from "react-dynamic-star";
+
 
 function Movie2Details
 () {
@@ -14,8 +14,9 @@ function Movie2Details
 
 
       <img src={movieSecond?.image.medium}></img>
+      <p>{movieSecond?.rating.average}</p>
       
-      <DynamicStar  />
+    
 
         <div className="product__rating"></div>
 
