@@ -10,6 +10,7 @@
 /* MOVIE1 */
 .movie1 {
   background-image: url("./images/wp5685957.jpeg");
+  background-position: center;
   color: wheat;
   height: 758px;
 }
@@ -24,4 +25,10 @@
 .genres {
   font-size: 14px;
 }
+
+.timeMovie {
+  font-size: 14px;
+}
 /* MOVIE1 END */
+
+
