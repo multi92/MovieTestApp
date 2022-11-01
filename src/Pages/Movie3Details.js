@@ -1,25 +1,28 @@
 import useFetch from "../useFatch";
 import "../../src/App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 
-
-function Movie3Details() {
+function MovieDetails3() {
   const { data: movieThird } = useFetch("https://api.tvmaze.com/shows/3");
 
-
   return (
-    <div>
-      <div className="movie3">
-        <h2> {movieThird?.name}</h2>
-        <img src={movieThird?.image.medium}></img>
-        <p>{movieThird?.rating.average}</p>
-
-        <div className="product__rating"></div>
-
-        <p> {movieThird?.summary}</p>
-        <hr />
+    <div className="movie1">
+      <h1> {movieThird?.name}</h1>
+      <p className="rating"> {movieThird?.rating.average} 🌟🌟🌟🌟🌟🌟🌟🌟</p>
+      <p className="genres"> {movieThird?.genres}</p>
+      <p className="pMovieOne"> {movieThird?.summary}</p>
+      <div className="faIcons">
+        <FontAwesomeIcon icon={faClock} />
+        <p className="timeMovie"> {movieThird?.averageRuntime} min </p>
+      </div>
+      <div className="premiered">
+        <div className="premiered">premiered: {movieThird?.premiered}</div>
+        <div className="ended">ended: {movieThird?.ended}</div>
+        <div className="schedule">schedule: {movieThird?.schedule.time}</div>
       </div>
     </div>
   );
 }
 
-export default Movie3Details;
+export default MovieDetails3;
