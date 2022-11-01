@@ -2,6 +2,9 @@ import useFetch from "../useFatch";
 import "../../src/App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+
+import { Button } from "react-bootstrap";
 
 function Movie1Details() {
   const { data: movieFirst } = useFetch("https://api.tvmaze.com/shows/1");
@@ -21,6 +24,10 @@ function Movie1Details() {
         <div className="ended">ended: {movieFirst?.ended}</div>
         <div className="schedule">schedule: {movieFirst?.schedule.time}</div>
       </div>
+
+      <Link to="/">
+        <Button>Back</Button>
+      </Link>
     </div>
   );
 }
