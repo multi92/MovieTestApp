@@ -3,9 +3,25 @@
 }
 
 .allMovies {
-  background-image: url('./images/wp4923981.jpeg');
+  background-image: url("./images/wp4923981.jpeg");
+  width: 100%;
 }
 
-p {
-
+/* MOVIE1 */
+.movie1 {
+  background-image: url("./images/wp5685957.jpeg");
+  color: wheat;
+  height: 758px;
 }
+.pMovieOne {
+  width: 50%;
+  font-size: medium;
+}
+.rating {
+  font-size: 14px;
+}
+
+.genres {
+  font-size: 14px;
+}
+/* MOVIE1 END */

@@ -18,7 +18,7 @@ function Movie2() {
   const { data: movie2 } = useFetch("https://api.tvmaze.com/shows/2");
 
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '24rem' }}>
     <Card.Img variant="top" src={movie2?.image.medium} />
     <Card.Body>
         <Card.Title> {movie2?.name}</Card.Title>
