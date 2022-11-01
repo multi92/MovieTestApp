@@ -1,10 +1,8 @@
 import React from "react";
 import useFetch from "../useFatch";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import Card from 'react-bootstrap/Card';
 import { useNavigate } from "react-router-dom";
 
 
@@ -20,20 +18,16 @@ function Movie3() {
   const { data: movie3 } = useFetch("https://api.tvmaze.com/shows/3");
 
   return (
-    <Container>
-      <Row>
-        <Col xl={12}>
-          <img src={movie3?.image.medium} /> <br/>
-          <Button  variant="btn btn-success" onClick={handleLocation}>
-            Details
-          </Button>
-
-          <p>{movie3?.name}</p>
-          <p>{movie3?.summary}</p>
-    
-        </Col>
-      </Row>
-    </Container>
+    <Card style={{ width: '18rem' }}>
+    <Card.Img variant="top" src={movie3?.image.medium} />
+    <Card.Body>
+        <Card.Title> {movie3?.name}</Card.Title>
+      <Card.Text>
+      {movie3?.summary}
+      </Card.Text>
+      <Button variant="primary" onClick={handleLocation}>Details</Button>
+    </Card.Body>
+  </Card>
   );
 }
 

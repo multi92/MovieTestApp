@@ -6,10 +6,14 @@ import Movie3 from "./Movie3";
 function Home() {
   return (
     <div className="allMovies">
-      <div className="container col-xl-6 col-md-4 col-sm-1">
-        <Movie1 />
-        <Movie2 />
-        <Movie3 />
+      <div className="container">
+        <div className="row col-xl-12">
+          <Movie1 />
+          <Movie2 />
+          <Movie3/>
+        </div>
+     
+   
       </div>
     </div>
   );
