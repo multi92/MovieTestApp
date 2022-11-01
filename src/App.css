@@ -8,11 +8,13 @@
 }
 
 /* MOVIE1 */
+
 .movie1 {
   background-image: url("./images/wp5685957.jpeg");
   background-position: center;
   color: wheat;
   height: 758px;
+  padding: 5%;
 }
 .pMovieOne {
   width: 50%;
@@ -24,11 +26,19 @@
 
 .genres {
   font-size: 14px;
+  border: 2px solid wheat;
+  border-radius: 10px;
+  width: 15%;
 }
 
 .timeMovie {
   font-size: 14px;
 }
+
+.premiered {
+  font-size: 14px;
+  display: block;
+  word-spacing: 2%;
+  color: rgb(17, 16, 16);
+}
 /* MOVIE1 END */
-
-
