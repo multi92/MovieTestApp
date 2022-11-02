@@ -3,13 +3,13 @@ import "../../src/App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "react-bootstrap";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function MovieDetails3() {
   const { data: movieThird } = useFetch("https://api.tvmaze.com/shows/3");
 
   return (
-    <div className="movie1">
+    <div className="movie3">
       <h1> {movieThird?.name}</h1>
       <p className="rating"> {movieThird?.rating.average} 🌟🌟🌟🌟🌟🌟🌟🌟</p>
       <p className="genres"> {movieThird?.genres}</p>

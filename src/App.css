@@ -42,3 +42,46 @@
   color: rgb(17, 16, 16);
 }
 /* MOVIE1 END */
+
+/* MOVIE2 */
+.movie2 {
+  background-image: url("./images/personOfInterest.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 758px;
+  padding: 5%;
+}
+.premiered {
+  color: white;
+}
+.premieredMovie2 {
+  font-size: 14px;
+  display: block;
+  word-spacing: 2%;
+  color: white;
+}
+/* MOVIE2 END */
+
+/* MOVIE3 */
+.movie3 {
+  background-image: url("./images/filmy-serial-ukushennaya-7208.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: wheat;
+  height: 758px;
+  padding: 5%;
+
+}
+
+.premiered {
+  color: wheat;
+}
+.premieredMovie2 {
+  font-size: 14px;
+  display: block;
+  word-spacing: 2%;
+  color: white;
+}
+/* MOVIE3 END */
